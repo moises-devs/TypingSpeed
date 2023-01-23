@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+::-moz-selection {
+    color: #ebf8f1;
+    background: #2cba6c;
+  }
+  
+  ::selection {
+    color: #ebf8f1;
+    background: #2cba6c;
+  }
+
+.container {
+    background:rgb(0, 15, 44);
+    height:100vh;
+    width:100vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10%;
+    justify-content: center;
+}
+header {
+    text-align: center;
+}
+.title {
+    color:white;
+    font-family: 'Merriweather', serif;
+    padding:3%;
+    font-size:2.5rem;
+}
+.details {
+    color:white;
+    font-size: 1.5rem;
+    font-family: 'Merriweather', serif;
+}
+
+.content-wrapper {
+    color:white;
+    background-color: black;
+    padding:3%;
+    height:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:.8rem;
+    margin: 3% 0;
+    max-width:1500px;
+}
+.content {
+    border:.1rem solid white;
+    background:black;
+    width:100%;
+    height:100%;
+    border-radius:.8rem;
+    padding:2%;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.content-text {
+
+    font-size: 1rem;
+    overflow-y:scroll;
+    letter-spacing: .3rem;
+    font-family: 'Merriweather', serif;
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+.content-items {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top:.1rem solid white;
+    margin-top:1%;
+    width:100%;
+}
+.content-text::-webkit-scrollbar {
+    display:none;
+}
+.content-list{
+    background-color: transparent;
+    list-style-type: none;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:2rem;
+    font-family: 'Merriweather', serif;
+    color:white;
+    width:88%;
+}
+.content-list-item {
+    padding: 0 3%;
+    margin: 0 2%;
+    font-size:1.2rem;
+}
+
+.cta-btn {
+    color:black;
+    background-color:#2cba6c;
+    border-radius:.2rem;
+    outline:none;
+    border:none;
+    min-width:12%;
+    display: block;
+    height:3rem;
+    text-align:center;
+    transition: all .3s;
+    cursor:pointer;
+}
+
+.cta-btn:hover {
+    background-color: black;
+    border:.1rem solid #2cba6c;
+    color:white;
+}
+.cta-btn:active {
+    border:.1rem solid white;
+}
+.success {
+    color:#2cba6c;
+}
+
+.failure {
+    color:#ffc1c1;
+    background-color: #900000;
+    border-radius:.2rem;
+}
+.active {
+    color:yellow;
+    position:relative;
+}
+.active::before {
+    content: "";
+    width:100%;
+    height:2px;
+    position:absolute;
+    left:0;
+    bottom : 0;
+    background-color: white;
+
+}
+
+.input-text {
+    position:absolute;
+    z-index:-1;
+}
